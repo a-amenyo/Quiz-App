@@ -12,9 +12,11 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
+// getting category id in localstorage
+let category = localStorage.getItem('cat');
 
 fetch(
-    'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
+    `https://opentdb.com/api.php?amount=10&category=${category}&difficulty=easy&type=multiple`
 )
     .then((res) => {
         return res.json();
