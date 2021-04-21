@@ -22,7 +22,7 @@ function getCategory2(){
 
 cat.addEventListener("click", getCategory); 
 cat2.addEventListener("click", getCategory2);
-
+3
 
 
 
